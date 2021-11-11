@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color:  #1e2124;
+}
+
+.wrapper {
+    background-color: #1e2124;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style-type: none;
+
+    background-color:  	#282b30;
+    padding-right: 5%;
+    
+}
+
+.navbar .navbar-item {
+    padding: 15px 30px;
+    transition: .2s;
+}
+.navbar .navbar-item:hover{
+    background: #424549;
+}
+
+.navbar .navbar-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.other {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 600px;
+}
+.content.left {
+    margin-top: 20px;
+}
+.content.right{
+    color: white;
+    background: #7289da;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+}
+.content .right-text p {
+    padding-bottom: 20px;
+}
+.content .right-text a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s;
+}
+.content .right-text a:hover{
+
+    text-decoration: none;
+    color: #424549;
+}
+.content .right-text a i{
+    font-size: 40px;
+    padding: 10px 3px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.profile-text{
+    color: white;
+}
+/*Tutorial for rainbow text: https://w3bits.com/rainbow-text/ */
+.rainbow {
+    background-size: 400% 400%;
+    background-image: repeating-linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    text-shadow: 0 5px 15px white;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 25%;
+    }
+}
+
+@media (max-width:700px){
+    .navbar {
+        justify-content: center;
+    }
+    .content {
+        margin: 20px;
+        max-width: 80%;
+    }
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+}

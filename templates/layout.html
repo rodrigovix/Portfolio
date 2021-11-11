@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='projects.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='experience.css') }}">
+    <script src="https://kit.fontawesome.com/4a151a7ea3.js" crossorigin="anonymous"></script>
+    {% if title %}
+    <title>Rodrigo Portfolio - {{title}}</title>
+    {% else %}
+    <title>Rodrigo Portfolio</title>
+    {% endif %}
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-item"><a href="/">Home</a></li>
+                <li class="navbar-item"><a href="/experience">Experiências</a></li>
+                <li class="navbar-item"><a href="/projects">Projetos</a></li>
+            </ul>
+        </nav>
+
+        <div class="other">
+            {% block content %} {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="content left">
+
+    <div class="profile">
+        <img src="{{ url_for('static', filename='perfil.jpg') }}">
+    </div>
+
+    <div class="profile-text">
+        <h1 class="rainbow">Rodrigo Sousa</h1>
+    </div>
+
+</div>
+
+<div class="content right">
+    <div class="right-text">
+        <p> {{myself}} </p>
+        <a href="https://github.com/rodrigovix"><i class="fab fa-github-square"></i></a>
+    </div>
+</div>
+
+{% endblock %}

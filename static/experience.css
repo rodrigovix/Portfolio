@@ -1,0 +1,74 @@
+.experience {
+    width: 50%;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.school-wrapper {
+    background-color: #7289da;
+    border-radius: 10px;
+    margin: 20px 0;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+    padding: 15px;
+}
+.school { 
+}
+.school-info {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.school-info-side2 {
+    text-align: right;
+}
+.school-title {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.line {
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+}
+.school-courses {
+    padding: 10px;
+}
+
+.work-wrapper {
+    background-color: #7289da;
+    border-radius: 10px;
+}
+
+.work {
+    
+    padding: 10px;
+}
+.work h1 {
+    padding-left: 5px;
+}
+.work-title {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+
+}
+.work-title-side2{
+    text-align: right;
+}
+.work-info{
+    padding: 0 10px;
+}
+
+
+@media (max-width:900px){
+    .experience {
+        width: 80%;
+    }
+    
+  
+}
